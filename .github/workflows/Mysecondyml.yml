@@ -2,8 +2,7 @@ name: My second yml file
 
 on:
   issues:
-    types: [opened, edited, closed]
-
+    
 jobs:
   output-info:
     runs-on: ubuntu-latest
