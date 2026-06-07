@@ -1,7 +1,7 @@
 name: My first yml file
 on: [push]
 jobs:
-  build:
+  script-runner:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -12,3 +12,5 @@ jobs:
       - name: Run the lint, test and build script
         run: |
           npm run lint && npm run test && npm run build
+
+
